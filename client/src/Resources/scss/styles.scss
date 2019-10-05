@@ -1,0 +1,384 @@
+$main-font-color: #fff;
+$color: #ffe507;
+$button-bck-color: #ffe507;
+$button-color: #555;
+$light-color: #f7f7f7;
+$line-color: #dcdcdc;
+$blue: #607d8b;
+$czcionkafiltry: #dadada;
+$font-family: 'Montserrat', sans-serif;
+$img_background: '/images/3.jpg';
+
+body{
+  font-family: $font-family;
+  color: $main-font-color;
+  margin:0;
+  //background:#fff;
+  background-image: url($img_background);
+  background-attachment: fixed;
+}
+
+
+
+.container {
+  width: 80vw;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  display: block;
+}
+
+.page_wrapper {
+  padding: 20vh 0;
+}
+
+.left {
+  float:left;
+}
+
+.right {
+  float:right;
+}
+
+input, select, textarea {
+  font-family: $font-family;
+  height: 48px;
+  padding: 0 .75em;
+  width: -webkit-fill-available;
+  margin: 10px 0;
+  border: 1px solid $line-color;
+}
+
+textarea{
+  height: auto;
+  padding: 10px;
+  margin:0;
+}
+
+.error_label{
+  color:red;
+}
+.form_success{
+  color:green;
+}
+.dialog_alert{
+  text-align: center;
+  color:#000000;
+  h2{
+    margin-top: 0;
+  }
+  .my_link{
+    padding-top: 40px;
+  }
+}
+.advert_title{
+  font-weight: bold;
+  color:rgba(0, 0, 0, 0.87);
+}
+.all_reservations{
+  margin-top: 40px;
+}
+
+.multiselect {
+  width: -webkit-fill-available;
+  margin-top:20px!important;
+}
+
+.istrainer{
+  label{
+    font-size:0.85rem;
+  }
+}
+
+.formBlock-checkbox {
+  display: flex;
+}
+
+.label_inputs {
+  font-size:0.95rem;
+}
+
+button, .button, .button-icon{
+  background: $button-bck-color;
+  color: $button-color;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  padding: 16px 48px 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-align: center;
+  border:0;
+  margin:20px 0;
+}
+
+.button-right{
+  text-align: right;
+  margin:40px 0;
+}
+
+.button-icon{
+  padding:16px 18px;
+  float: right;
+  margin:0;
+}
+
+.button-simple{
+  float:right;
+  color:#9a9a9a;
+  padding-left: 16px;
+  &:hover{
+    color:#000;
+  }
+}
+
+.small-text{
+  font-size:0.85em;
+}
+
+.line {
+  border-bottom: 1px solid $line-color;
+}
+
+.line-break{
+  margin-top: 40px;
+}
+
+.links{
+  padding-top: 14px;
+  a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: $main-font-color;
+    letter-spacing: 0.1em;
+  }
+}
+
+.my_link{
+  a{
+    text-decoration: none;
+  }
+}
+
+.logo {
+  width:70%;
+  img{
+    width:inherit;
+  }
+}
+
+//REGISTER / LOGIN
+
+.register_login {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 26.875em;
+  padding: 40px;
+  background-color: rgba(255, 255, 255, 0.9);
+  h2, p, a {
+    color:#000;
+  }
+  a{
+    font-weight: bold;
+  }
+}
+
+.dialog_alert {
+  padding: 51px;
+  font-size: 24px;
+}
+
+.log_out_link {
+  color: $main-font-color;
+  margin-left: 40px;
+  letter-spacing: 0.1em;
+}
+
+
+.user_container {
+  display:flex;
+  margin-bottom: 50px;
+  min-height: 70vh;
+  .user_left_nav{
+    .links{
+      width:20vw;
+      a{
+        margin: 0;
+        display: block;
+        padding: 10px 0px;
+        text-transform: inherit;
+      }
+    }
+  }
+  .user_right{
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    flex-grow: 1;
+    //border: 1px solid #e2e2e2;
+  }
+  .user_nfo_panel{
+    background: #f8f8f8;
+    padding: 20px;
+    margin-top: 20px;
+  }
+}
+
+
+
+.page-title {
+  background-color: #2d2d2d;
+  padding: 16px 30px;
+  h2{
+    color:#fff;
+    margin:0;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+}
+
+.site-content {
+  padding: 30px;
+}
+
+//DASHBOARD
+
+.user-info{
+  padding-bottom: 40px;
+}
+
+//ADVERT CLIENT
+
+.client_left_nav{
+  width: 20vw;
+  padding-right: 40px;
+  color:$czcionkafiltry;
+  span{
+    color:$czcionkafiltry;
+  }
+}
+
+.client_right{
+  width:100%;
+  h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 45px;
+    letter-spacing: .15em;
+    margin: 0 0 41px 0;
+    color: $czcionkafiltry;
+    text-transform: lowercase;
+  }
+}
+
+.advert_client{
+  background-color: rgba(255, 255, 255, 0.9);
+  color:#000000;
+  margin-bottom: 20px;
+}
+
+.advert_client_content{
+  display: flex;
+  padding: 20px;
+  border-left: 6px solid $button-bck-color;
+}
+
+.first_col{
+   padding-right: 40px;
+ }
+
+.second_col{
+  width:100%;
+}
+
+.second-col-sport{
+  color:#6b6b6b;
+}
+
+.second-col-description{
+  padding: 16px 0;
+  font-size: 0.9rem;
+}
+
+.block-inline{
+  padding-top: 40px;
+}
+
+.second-col-localization{
+  float:left;
+}
+
+.second-col-readmore{
+  float:right;
+}
+
+.big-avatar{
+  width: 60px!important;
+  height: 60px!important;
+}
+
+.second-col-price{
+  font-size: 0.8em;
+  color:#6b6b6b;
+}
+
+.price-big {
+  font-size: 2em;
+  color: $blue;
+}
+
+.MuiRadio-colorSecondary-115.MuiRadio-checked-112 {
+  color: #757575 !important;
+}
+
+//ADVERT DETAIL
+
+.advert-detail {
+  background-color: rgba(255,255,255,0.9);
+  display: flex;
+  color:#000000;
+}
+
+.advert-detail-left{
+  float: left;
+  width:55%;
+  margin: 40px;
+}
+
+.advert-detail-right{
+  float: right;
+  width:45%;
+  margin: 40px;
+  h3{
+    padding-bottom: 66px;
+  }
+  .DayPickerInput{
+    display: block;
+  }
+  textarea{
+    margin: 10px 0;
+  }
+  .DayPicker{
+    margin-left: 0!important;
+  }
+}
+
+.advert-detail-description {
+  line-height: 1.8;
+  padding: 40px 0;
+}
+
+.advert-detail-priceperhour {
+  margin-bottom: 20px;
+}
+
+.DayPicker{
+  margin-left: -23px!important;
+}
+
+//.DayPicker-Day--selected{
+//  background-color: #2d2d2d!important;
+//}
+
+
